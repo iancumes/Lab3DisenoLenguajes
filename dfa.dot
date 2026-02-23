@@ -1,0 +1,15 @@
+digraph DFA {
+  rankdir=LR;
+  labelloc="t"; label="Mi DFA"; fontsize=20;
+  node [shape=circle];
+  __start [shape=none label=""];
+  __start -> S6695278;
+  S6695278 [shape=circle label="{1}"];
+  S2005635 [shape=doublecircle label="{2,3,4}"];
+  S8735736 [shape=circle label="∅"];
+  S2005635 -> S8735736 [label="a"];
+  S2005635 -> S2005635 [label="b,c"];
+  S6695278 -> S2005635 [label="a"];
+  S6695278 -> S8735736 [label="b,c"];
+  S8735736 -> S8735736 [label="a,b,c"];
+}
